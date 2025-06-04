@@ -1,0 +1,256 @@
+@import url('https://fonts.google.com/specimen/Libre+Franklin');
+*{
+    box-sizing: border-box;
+    text-decoration: none;
+    padding: 0;
+    margin: 0;
+    font-family: "DM Sans", sans-serif;
+    letter-spacing: 1px;
+    list-style: none;
+}
+body{
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+.logo{
+    display: flex;
+    justify-content: center;
+    margin: 2rem auto;
+}
+.summary{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.summary .launch{
+    font-size: 35px;
+    font-weight: 300;
+    color: hsl(0, 0%, 59%);
+    margin-bottom: 1rem;
+}
+.summary .launch span{
+    color: hsl(209, 33%, 12%);
+    font-weight: 600;
+}
+.summary .sub{
+    color: hsl(209, 33%, 12%);
+    font-size: 20px;
+}
+.page-form{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+.page-form input[type="email"]{
+    width: 30%;
+    height: 45px;
+    padding: 5px 12px;
+    border-radius: 666px;
+    border: 1px solid hsl(0, 0%, 59%);
+}
+.page-form input[type="email"]::placeholder{
+    color: hsl(0, 0%, 59%);
+    font-size: 14px;
+}
+.page-form button{
+    width: 12%;
+    height: 45px;
+    border: none;
+    background-color: hsl(223, 87%, 63%);
+    box-shadow: 0px 3px 8px hsl(223, 50%, 63%);
+    color: white;
+    border-radius: 666px;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.page-form button:hover{
+    background-color: hsl(223, 63%, 63%);
+}
+.page-dashboard{
+    max-width: 45%;
+    display: flex;
+    margin: 2rem auto;
+    justify-content: center;
+}
+.page-dashboard img{
+    width: 100%;
+}
+.socials{
+    margin: 1.5rem auto;
+}
+.socials ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.socials ul li i{
+    width: 34px;
+    padding: 8px 0;
+    color:hsl(223, 87%, 63%);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid hsl(0, 0%, 80%);
+    cursor: pointer;
+}
+.socials ul li i:hover{
+    color: white;
+    background-color: hsl(223, 87%, 63%);
+    border: 1px solid hsl(223, 87%, 63%);
+    transition: all 0.3s ease-in-out;
+}
+.copyright{
+    text-align: center;
+    font-size: 15px;
+    color: hsl(0, 0%, 59%);
+    margin: 1rem;
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%);
+}
+@media (max-width: 860px){
+    .page-form input[type="email"]{
+        width: 45%;
+    }
+    .page-form button{
+        width: 18%;
+    }
+    .page-dashboard{
+        max-width: 60%;
+    }
+}
+@media (max-width: 630px){
+    .summary .launch{
+        font-size: 30px;
+    }
+    .summary .sub{
+        font-size: 15px;
+    }
+    .page-form input[type="email"]{
+        width: 50%;
+    }
+    .page-form input[type="email"]::placeholder{
+        font-size: 12px;
+    }
+    .page-form button{
+        font-size: 12px;
+        width: 25%;
+    }
+    .page-dashboard{
+        max-width: 80%;
+    }
+}
+@media (max-width: 455px){
+    .logo{
+        margin-top: 25%;
+    }
+    .logo img{
+        width: 15%;
+    }
+    .summary .launch{
+        font-size: 26px;
+    }
+    .summary .sub{
+        margin-top: 1px;
+    }
+    .page-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: .7rem;
+    }
+    .page-form input[type="email"]{
+        width: 70%;
+    }
+    .page-form button{
+        width: 70%;
+        font-weight: 600;
+    }
+    .page-dashboard{
+        max-width: 85%;
+        margin-top: 10%;
+        margin-bottom: 35%;
+    }
+    .socials ul{
+        gap: .8rem;
+    }
+    .socials ul li i{
+        width: 32px;
+        padding: 6px 0;
+    }
+    .copyright{
+        font-size: 12px;
+    }
+    .attribution { 
+    font-size: 10px; 
+    }
+}
+@media (max-width: 370px){
+    .summary .launch{
+        font-size: 22px;
+    }
+    .page-form input[type="email"]{
+        width: 80%;
+        height: 40px;
+    }
+    .page-form button{
+        width: 80%;
+        height: 40px;
+    }
+    .page-dashboard{
+        max-width: 88%;
+        margin-top: 10%;
+        margin-bottom: 35%;
+    }
+    .socials ul{
+        gap: .6rem;
+    }
+    .socials ul li i{
+        width: 30px;
+    }
+    .copyright{
+        font-size: 10px;
+    }
+    .attribution { 
+        max-width: 90%;
+        margin: 0 auto;
+        font-size: 8px; 
+        text-align: center;
+    }
+}
+@media (max-width: 270px){
+    .summary .launch{
+        width: 95%;
+        font-size: 18px;
+    }
+    .summary .sub{
+        width: 95%;
+        font-size: 12px;
+    }
+    .page-form input[type="email"]{
+        width: 90%;
+        height: 35px;
+    }
+    .page-form button{
+        width: 90%;
+        height: 35px;
+    }
+    .copyright{
+        font-size: 8px;
+    }
+    .attribution { 
+        font-size: 7px; 
+    }
+}
