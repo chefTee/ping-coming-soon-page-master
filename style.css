@@ -64,12 +64,26 @@ body{
     box-shadow: 0px 3px 8px hsl(223, 50%, 63%);
     color: white;
     border-radius: 666px;
-    margin-bottom: 2rem;
     cursor: pointer;
     transition: all 0.3s ease-in-out;
 }
 .page-form button:hover{
     background-color: hsl(223, 63%, 63%);
+}
+.error{
+    margin-top: 5px;
+    max-width: 100%;
+    width: 30%;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    color: hsl(354, 100%, 66%);
+    margin-left: 29%;
+    font-size: .8em;
+    letter-spacing: normal;
+}
+.error.hide{
+    visibility: hidden;
 }
 .page-dashboard{
     max-width: 45%;
@@ -121,10 +135,14 @@ body{
 }
 @media (max-width: 860px){
     .page-form input[type="email"]{
-        width: 45%;
+        width: 55%;
     }
     .page-form button{
-        width: 18%;
+        width: 20%;
+    }
+    .error{
+        margin-left: 13%;
+        width: 55%;
     }
     .page-dashboard{
         max-width: 60%;
@@ -174,6 +192,15 @@ body{
     .page-form input[type="email"]{
         width: 70%;
     }
+    .error{
+        margin: 0 auto;
+        max-width: 100%;
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        width: 70%;
+        padding-top: 10px;
+    }
     .page-form button{
         width: 70%;
         font-weight: 600;
@@ -204,6 +231,11 @@ body{
     .page-form input[type="email"]{
         width: 80%;
         height: 40px;
+    }
+    .error{
+        margin: 0 auto;
+        width: 80%;
+        font-size: 12px;
     }
     .page-form button{
         width: 80%;
@@ -242,6 +274,11 @@ body{
     .page-form input[type="email"]{
         width: 90%;
         height: 35px;
+    }
+    .error{
+        margin: 0 auto;
+        width: 90%;
+        font-size: 10px;
     }
     .page-form button{
         width: 90%;

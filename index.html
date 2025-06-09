@@ -6,6 +6,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./font/css/all.css">
+  <script src="ping.js" defer></script>
   <title>Frontend Mentor | Ping coming soon page</title>
 </head>
 <body>
@@ -16,10 +17,13 @@
     <p class="launch">We are launching <span>soon!</span></p>
     <p class="sub">Subscribe and get notified</p>
   </div>
-  <div class="page-form">
-    <input type="email" name="" id="" placeholder="Your email address...">
-    <button type="submit">Notify Me</button>
+  <section>
+    <div class="page-form">
+    <input type="email" name="" id="emailBox" placeholder="Your email address...">
+    <button type="submit" id="submitButton">Notify Me</button>
   </div>
+  <p class="error hide" id="error">Please provide a valid email address</p>
+  </section>
   <div class="page-dashboard">
     <img src="./images/illustration-dashboard.png" alt="">
   </div>
